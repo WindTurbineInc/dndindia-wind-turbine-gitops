@@ -1,0 +1,15 @@
+app:
+  name: dndindia-wind-turbine-app
+  namespace: dndindia
+  cluster: .apps.wearedevs.rl97.p1.openshiftapps.com
+
+git:
+  branch: main
+  repo: https://github.com/WindTurbineInc/dndindia-wind-turbine
+  org: WindTurbineInc
+  name: dndindia-wind-turbine
+
+image:
+  host: image-registry.openshift-image-registry.svc:5000
+  name: dndindia/wind-turbine-app
+  tag: latest
